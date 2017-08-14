@@ -77,9 +77,9 @@ public class WorldDrawer extends CustomDrawer
 		translateCamera(game.joueur.body.pos);
 		translateCamera(EntityHuman.eyes);
 		translateCamera(new TriDouble(- Math.sin(Math.toRadians(game.joueur.walkHelper.state)) * .1,-Math.sin(Math.toRadians(Math.abs(game.joueur.walkHelper.state))) * .1,0));
-
+*/
 		if (game.renderMode != 0)
-			drawEntity(game.joueur);*/
+			drawEntity(game.joueur);
 
 		for (Entity h : game.world.getEntities())
 			if (h != game.joueur)
@@ -98,7 +98,6 @@ public class WorldDrawer extends CustomDrawer
 				}
 			}
 		ShaderProgram.stop();
-		//drawCube(1,1,1,-2,-2,-2,0,0,0);
 		load2D();
 	}
 	public static void load(Hikali game)

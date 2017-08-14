@@ -1,0 +1,11 @@
+#version 150 core
+
+in vec4 out_color;
+in vec2 pass_textureCoordinates;
+
+uniform sampler2D modelTexture;
+
+void main(void)
+{
+   gl_FragColor = (out_color/255) * texture(modelTexture,pass_textureCoordinates);
+}

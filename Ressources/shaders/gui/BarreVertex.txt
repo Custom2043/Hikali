@@ -1,0 +1,22 @@
+#version 150
+
+in vec2 position;
+in vec4 color;
+in vec2 textureCoordinates;
+
+out vec2 pass_textureCoordinates;
+out vec4 out_color;
+
+uniform mat4 projectionMatrix;
+uniform vec3 x;
+uniform vec3 y;
+uniform vec3 w;
+uniform vec3 h;
+uniform vec3 screen;
+uniform float inUse;
+
+void main(void){
+    gl_Position = projectionMatrix * vec4((x.x * screen.x + x.y * screen.z + x.z) + (w.x * screen.x + w.y * screen.z + w.z)*position.x, (y.x * screen.y + y.y * screen.z + y.z) + (h.x * screen.y + h.y * screen.z + h.z)*position.y, 0.0, 1.0);
+    pass_textureCoordinates = vec2(textureCoordinates.x + (7*inUse)/256f, textureCoordinates.y);
+    out_color = color;
+}

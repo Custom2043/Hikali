@@ -1,0 +1,17 @@
+#version 150 core
+
+in vec3 position;
+in vec4 color;
+in vec2 textureCoordinates;
+
+out vec2 pass_textureCoordinates;
+out vec4 out_color;
+
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+
+void main(void){
+    gl_Position = projectionMatrix * viewMatrix * vec4(position.x,position.y,position.z, 1.0);
+    pass_textureCoordinates = textureCoordinates;
+    out_color = color;
+}

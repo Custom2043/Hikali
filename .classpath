@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/lwjgl/lwjgl_util-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl/lwjgl-2.9.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Hikali"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/slick/slick-util.jar"/>
+	<classpathentry kind="lib" path="lib/slick/slick.jar"/>
+	<classpathentry kind="lib" path="lib/commons/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/paulscode/CodecJOgg.jar"/>
+	<classpathentry kind="lib" path="lib/paulscode/CodecJOrbis.jar"/>
+	<classpathentry kind="lib" path="lib/paulscode/LibraryJavaSound.jar"/>
+	<classpathentry kind="lib" path="lib/paulscode/LibraryLWJGLOpenAL.jar"/>
+	<classpathentry kind="lib" path="lib/paulscode/SoundSystem.jar"/>
+	<classpathentry kind="lib" path="C:/Users/utilisateur/Desktop/Hikali/Workspace/CustomPackage/CustomPackageSources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
